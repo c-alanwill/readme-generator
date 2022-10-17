@@ -1,32 +1,90 @@
-// Packages needed for this application
-
+// Packages for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
 
 const questions = [];
 
+// Licenses
+const generateLicense = function(license){
+	if (license === 'Apache License 2.0') {
+		return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+	} 
+	if (license === 'MIT License') {
+		return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+	}
+	if (license === 'GNU General Public License v3.0') {
+		return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+	}
+}
+
 function init() {
 
+// README Content	
 const generateREADME = ({ title, overview, functionality, code, comments, repository, url, viewing, usage, license, contributing, questions }) => 
 
-`
-# Project Title ${title}
-* Overview ${overview}
-* Functionality ${functionality}
-* Code ${code}
-* Comments ${comments}
-* Repository ${repository}
-* URL ${url}
-* Viewing ${viewing}
-* Usage ${usage}
-* License ${license}
-* Contributing ${contributing}
-* Questions ${questions}
+`# Project Title ${title}
+## Overview 
+
+${overview}
+
+## Table of Contents 
+
+If your README is long, add a table of contents to make it easy for users to find what they need.
+
+- [Functionality](#functionality)
+- [Code](#code)
+- [Comments](#comments)
+- [Repository](#repository)
+- [URL](#url)
+- [Viewing](#viewing)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
+
+## Functionality 
+
+${functionality}
+
+## Code 
+
+${code}
+
+##  Comments 
+
+${comments}
+
+##  Repository 
+
+${repository}
+
+## URL 
+
+${url}
+
+## Viewing 
+
+${viewing}
+
+## Usage 
+
+${usage}
+
+## License 
+
+${generateLicense (license)}
+
+## Contributing 
+
+${contributing}
+
+## Questions 
+
+${questions}
 `
 
-// I need to put layout of readme here I believe, like miniproject example where they put layout of html page.
-
+// Inquirer Questions.
 inquirer
   .prompt([
     {
@@ -75,10 +133,10 @@ inquirer
 			message: 'Add a link to an image that shows the web application appearance and functionality.',
 		},
 		{
-			type: 'choices',
+			type: 'list',
 			name: 'license',
 			message: 'What type of license does the application have?  Choose one of the following licenses?',
-			choices: ['Public', "Private"]
+			choices: ['Apache License 2.0', 'MIT License', 'GNU General Public License v3.0']
 		},
 		{
 			type: 'input',
@@ -103,13 +161,3 @@ inquirer
 }
 
 init();
-
-
-// Research write file more.
-
-// function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
