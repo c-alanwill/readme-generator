@@ -22,9 +22,11 @@ node index.js
 
 * Comments have been applied to the index.js file to identify each section of code. 
 
-## Repository
+## Installation
 
 * The code for this project can be found on GitHub at: https://github.com/c-alanwill/readme-generator
+
+* A link to a video that shows a walkthrough demonstrating how this readme works is available at: https://drive.google.com/file/d/1_SL-QjndJmhXs-31FF--Iq-uZfIbYT11/view?usp=sharing
 
 
 ## Usage
