@@ -41,7 +41,7 @@ N/A
 
 ## License
 
-Please refer to the license in the repo.
+Please refer to the license in the repository.
 
 ## Contributing
 
