@@ -1,59 +1,48 @@
-# Project Title: Weather Dashboard
-## Overview 
+# README Generator
 
-a
+## Description
 
-## Table of Contents 
+* The repository shows an application where a user can create a professional README.md file for an project.  The command-line application will dynamically generate the README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for Node.js.   
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Functionality](#functionality)
-- [Code](#code)
-- [Comments](#comments)
-- [Repository](#repository)
-- [URL](#url)
-- [Viewing](#viewing)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Questions](#questions)
 
 ## Functionality 
 
-a
+* From the command line, the user is prompted for information that will make up the sections of README.md file for their project.  The user is asked questions relating to their project, such as: the project's title; a description of the project; how to install the project; the license they wish to use; if there are any contributers, and more.  A Table of Contents is included where if the user selects one of the links in the Table of Contents the page will advance to that section of the README. 
 
-## Code 
+* The application will be invoked by using the following command in the terminal:
+node index.js
 
-a
+## Code
 
-##  Comments 
+* There is an index.js file that lays out the code from which the README file is generated.  
 
-a
+* Included is a package.json file with the required dependencies, as well as gitignore, node_modules and .DS_Store files.
 
-##  Repository 
+## Comments
 
-a
+* Comments have been applied to the index.js file to identify each section of code. 
 
-## URL 
+## Repository
 
-a
+* The code for this project can be found on GitHub at: https://github.com/c-alanwill/readme-generator
 
-## Viewing 
 
-a
+## Usage
 
-## Usage 
+The following 3 images demonstrate a sample of a README.md appearance for a Weather Dashboard Application that was generated using this code that allows me to generate a README.md file.
 
-a
+![README Page 1](./images/readme-pg1.png)
+![README Page 2](./images/readme-pg2.png)
+![README Page 3](./images/readme-pg3.png)
 
-## License 
+## Credits
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+N/A
 
-## Contributing 
+## License
 
-a
+Please refer to the license in the repo.
 
-## Questions 
+## Contributing
 
-a
+N/A
