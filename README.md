@@ -1,60 +1,50 @@
-# Project Title Weather Dashboard
-## Overview 
+# README Generator
 
-The repository shows an application for a weather dashboard where the user can search for a city and display the current weather in addition to a five day forecast of weather for that city.  
+## Description
 
-## Table of Contents 
+* The repository shows an application where a user can create a professional README.md file for an project.  The command-line application will dynamically generate the README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for Node.js.   
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Functionality](#functionality)
-- [Code](#code)
-- [Comments](#comments)
-- [Repository](#repository)
-- [URL](#url)
-- [Viewing](#viewing)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Questions](#questions)
 
 ## Functionality 
 
-The user types a city in the search field and upon selecting the "submit" button, the city's current weather shows in a text area to the right.  Below that text area, are 5 cards that show the forecasted weather for the next five days thereafter, including the forecast for the temperature in farenheit, wind speed in MPH, and the humidity.  When a search of a city is complete, that city's name is stored in local storage and placed under the "Submit" button as it's own clickable button.  Each city search is saved and listed below the last button above it.  When a user selects a button for one of the cities, the current forecast and the five day forecast will be shown for that city, the same as if the user searched for the city.
+* From the command line, the user is prompted for information that will make up the sections of README.md file for their project.  The user is asked questions relating to their project, such as: the project's title; a description of the project; how to install the project; the license they wish to use; if there are any contributers, and more.  A Table of Contents is included where if the user selects one of the links in the Table of Contents the page will advance to that section of the README. 
 
-## Code 
+* The application will be invoked by using the following command in the terminal:
+node index.js
 
-The application uses local storage to store persistent data.  The cities a user searches for are saved in local storage.  The application makes requests and retrieves data from the third party API, openweathermap.org, to show the resulting weather details. This app runs in the browser and features dynamically updated HTML and CSS.  It has a responsive user interface to be laid out properly on various size screens.  The HTML code contains a logical structure for the elements within the page.  There are sections within the body for each section on the page.  The project uses Bootstrap with a link shown on the head section of the HTML.  There is also linked CSS stylesheet in the head section of the HTML.  Also, the project uses Moments.js with links under the script tag on the HTML page.  There is a linked Javascipt file as well under the script tag.
+## Code
 
-##  Comments 
+* There is an index.js file that lays out the code from which the README file is generated.  
 
-Notes have been applied to the HTML code, CSS and JavaScript code to identify each section of code. 
+* Included is a package.json file with the required dependencies, as well as gitignore, node_modules and .DS_Store files.
 
-##  Repository 
+## Comments
 
-The code for this project can be found on GitHub at: https://github.com/c-alanwill/weather-dashboard
+* Comments have been applied to the index.js file to identify each section of code. 
 
 ## Installation
 
-The project is currently running on Github server.  It can be viewed at: https://c-alanwill.github.io/weather-dashboard/
+* The code for this project can be found on GitHub at: https://github.com/c-alanwill/readme-generator
 
 * A link to a video that shows a walkthrough demonstrating how this readme works is available at: https://drive.google.com/file/d/1_SL-QjndJmhXs-31FF--Iq-uZfIbYT11/view?usp=sharing
 
 
-This app runs in the browser and features dynamically updated HTML and CSS.  It has a responsive user interface to be laid out properly on various size screens.  There is an index.html file to view the code for the application.  
+## Usage
 
-## Usage 
+The following 3 images demonstrate a sample of a README.md appearance for a Weather Dashboard Application that was generated using this code that allows me to generate a README.md file.
 
-![Weather Dashboard](./images/weather-dashboard.png)
+![README Page 1](./images/readme-pg1.png)
+![README Page 2](./images/readme-pg2.png)
+![README Page 3](./images/readme-pg3.png)
 
-## License 
+## Credits
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+N/A
 
-## Contributing 
+## License
 
 Please refer to the license in the repository.
 
-## Questions 
+## Contributing
 
-Contact email address for questions is: altrent6@gmail.com
+N/A
