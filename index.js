@@ -153,7 +153,7 @@ inquirer
 .then((answers) => {
 	const readmePageContent = generateREADME(answers);
 
-	fs.writeFile('README.md', readmePageContent, (err) =>
+	fs.writeFile('./output/README.md', readmePageContent, (err) =>
 		err ? console.log(err) : console.log('Successfully created README.md!')
 	);
 });
