@@ -38,14 +38,11 @@ The code for this project can be found on GitHub at: https://github.com/c-alanwi
 
 The project is currently running on Github server.  It can be viewed at: https://c-alanwill.github.io/weather-dashboard/
 
-* A link to a video that shows a walkthrough demonstrating how this readme works is available at: https://drive.google.com/file/d/1_SL-QjndJmhXs-31FF--Iq-uZfIbYT11/view?usp=sharing
-
-
 This app runs in the browser and features dynamically updated HTML and CSS.  It has a responsive user interface to be laid out properly on various size screens.  There is an index.html file to view the code for the application.  
 
 ## Usage 
 
-![Weather Dashboard](./images/weather-dashboard.png)
+![Weather Dashboard](../images/weather-dashboard.png)
 
 ## License 
 
